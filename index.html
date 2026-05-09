@@ -1,647 +1,639 @@
-  <!DOCTYPE html>
-  <html lang="en" manifest="app_cache.appcache">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vikram Engineering — Precision Spinning Rings since 1991</title>
+<meta name="description" content="Vikram Engineering Works — manufacturers of precision spinning, twisting and doubling rings. Made for the perfectionist since 1991." />
+<meta name="theme-color" content="#0c0b08" />
 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-       <meta charset="utf-8" />
-       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-       <meta name="viewport" content="width=device-width, initial-scale=1" />
-       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-       <meta name="theme-color" content="#333" />
-       <title> Vikram engineerings</title>
-       <meta name="description" content="Vikram engineerings" />
-       <meta name="author" content="Akshil shah" />
-       <link rel="shortcut icon" href="assets/img/favicon_1e449cf8.png" />
-       <link rel="stylesheet" href="../../../../fonts.googleapis.com/icon_fa5a490a.css" />
-       <link rel="stylesheet" href="assets/css/preload.min.css" />
-       <link rel="stylesheet" href="assets/css/plugins.min.css" />
-       <link rel="stylesheet" href="assets/css/style.light-blue-500.min.css" />
-       <link rel="stylesheet" href="assets/css/width-boxed.min.css" id="ms-boxed" disabled="" />
-   
-     </head>
-     <body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 
-       <div id="ms-preload" class="ms-preload">
-         <div id="status">
-           <div class="spinner">
-             <div class="dot1"></div>
-             <div class="dot2"></div>
-           </div>
-         </div>
-       </div>
-       <div class="sb-site-container">
-         <!-- Modal -->
+<link rel="stylesheet" href="assets/css/style.css?v=18" />
+</head>
+<body>
 
-         <header class="ms-header ms-header-primary" id="home">
-           <div class="container container-full">
-             <div class="ms-title">
-               <a href="index.html">
-                 <img src="vikram.png" alt="" class="img-responsive" height="100px"   >
-                 <!-- <span class="ms-logo animated zoomInDown animation-delay-5">V </span>
-                 <h1 class="animated fadeInRight animation-delay-6"> Vikram
-                   <span> engineerings </span>
-                 </h1> -->
-               </a>
-             </div>
-        
-           </div>
-         </header>
-         <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-primary">
-          <div class="container container-full">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="index.html">
-                <!-- <img src="vikram.png" alt=""> -->
-                <span class="ms-logo ms-logo-sm"> V</span>
-                <span class="ms-title">Vikram
-                  <strong>Engineerings</strong>
-                </span>
-              </a>
+<!-- GRAIN OVERLAY -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- CURSOR -->
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <svg viewBox="0 0 100 100" class="loader__ring">
+      <circle cx="50" cy="50" r="44" class="loader__track"></circle>
+      <circle cx="50" cy="50" r="44" class="loader__progress"></circle>
+    </svg>
+    <div class="loader__label">
+      <span data-split>V</span><span data-split>I</span><span data-split>K</span><span data-split>R</span><span data-split>A</span><span data-split>M</span>
+    </div>
+    <div class="loader__sub">EST. MCMXCI · PRECISION ENGINEERING</div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav__brand">
+    <a href="#home" class="brand">
+      <img src="assets/img/logo.png" alt="Vikram Engineering Works" class="brand__logo" />
+      <span class="brand__text">
+        <span class="brand__sub">Engineering Works · Since 1991</span>
+      </span>
+    </a>
+  </div>
+  <ul class="nav__links">
+    <li><a href="#legacy" data-num="01">Legacy</a></li>
+    <li><a href="#precision" data-num="02">Precision</a></li>
+    <li><a href="#catalogue" data-num="03">Catalogue</a></li>
+    <li><a href="#reach" data-num="04">Reach</a></li>
+    <li><a href="clients.html" data-num="05">Clients</a></li>
+    <li><a href="#contact" data-num="06">Contact</a></li>
+  </ul>
+  <a class="nav__cta" href="#contact">
+    <span>Request a Sample</span>
+    <svg viewBox="0 0 20 20" width="14" height="14"><path d="M3 10h14M11 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+  </a>
+  <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#legacy"><em>01</em> Legacy</a></li>
+    <li><a href="#precision"><em>02</em> Precision</a></li>
+    <li><a href="#catalogue"><em>03</em> Catalogue</a></li>
+    <li><a href="#reach"><em>04</em> Reach</a></li>
+    <li><a href="clients.html"><em>05</em> Clients</a></li>
+    <li><a href="#contact"><em>06</em> Contact</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero__grid">
+    <div class="hero__eyebrow">
+      <span class="line"></span>
+      <span>A Family of Perfectionists — Four Decades</span>
+    </div>
+
+    <h1 class="hero__title">
+      <span class="line-wrap"><span class="line-inner">Precision</span></span>
+      <span class="line-wrap"><span class="line-inner">spinning rings,</span></span>
+      <span class="line-wrap"><span class="line-inner">engineered in</span></span>
+      <span class="line-wrap"><span class="line-inner"><mark>India</mark> since 1991.</span></span>
+    </h1>
+
+    <p class="hero__lede">
+      High-carbon, high-chrome 100 Cr 6 spinning rings — engineered on advanced CNC infrastructure, finished to 15 micron ovality, built to run at 21,000 rpm without compromise.
+    </p>
+
+    <div class="hero__cta-row">
+      <a href="#catalogue" class="btn btn--primary">
+        <span>View the Catalogue</span>
+        <svg viewBox="0 0 20 20" width="14" height="14"><path d="M3 10h14M11 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+      </a>
+      <a href="assets/brochure.pdf" target="_blank" rel="noopener" class="btn btn--ghost">
+        <svg viewBox="0 0 20 20" width="14" height="14"><path d="M10 3v11M5 10l5 5 5-5M3 17h14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span>Download Brochure</span>
+      </a>
+    </div>
+
+    <div class="hero__badges">
+      <div class="badge-iso">
+        <svg viewBox="0 0 40 40" width="28" height="28">
+          <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1"/>
+          <path d="M13 20l5 5 9-11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <span class="badge-iso__kicker">Certified</span>
+          <span class="badge-iso__name">ISO 9001:2015</span>
+        </div>
+      </div>
+      <div class="badge-iso badge-iso--alt">
+        <svg viewBox="0 0 40 40" width="28" height="28">
+          <path d="M20 6l4 6 7 1-5 5 1 7-7-3-7 3 1-7-5-5 7-1z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <span class="badge-iso__kicker">Customisation</span>
+          <span class="badge-iso__name">Ø 36–285 mm</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__stats">
+      <div class="stat">
+        <div class="stat__num"><span class="count" data-to="34">34</span><sup>+</sup></div>
+        <div class="stat__lbl">Years of precision</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num"><span class="count" data-to="21">21</span>K</div>
+        <div class="stat__lbl">RPM spindle speed</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num"><span class="count" data-to="15">15</span>µ</div>
+        <div class="stat__lbl">Ovality tolerance</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num"><span class="count" data-to="6">6</span></div>
+        <div class="stat__lbl">Export nations</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Animated Ring -->
+  <div class="hero__ring" aria-hidden="true">
+    <svg viewBox="0 0 600 600" class="ring-svg">
+      <defs>
+        <radialGradient id="ringGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#f26f21" stop-opacity="0.35"/>
+          <stop offset="60%" stop-color="#f26f21" stop-opacity="0.05"/>
+          <stop offset="100%" stop-color="#f26f21" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="brass" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ff8a3d"/>
+          <stop offset="40%" stop-color="#f26f21"/>
+          <stop offset="70%" stop-color="#c85614"/>
+          <stop offset="100%" stop-color="#ffa366"/>
+        </linearGradient>
+      </defs>
+      <circle cx="300" cy="300" r="280" fill="url(#ringGlow)"/>
+      <g class="ring-group">
+        <circle cx="300" cy="300" r="240" fill="none" stroke="url(#brass)" stroke-width="1.5" opacity="0.85"/>
+        <circle cx="300" cy="300" r="210" fill="none" stroke="url(#brass)" stroke-width="18" opacity="0.95"/>
+        <circle cx="300" cy="300" r="180" fill="none" stroke="url(#brass)" stroke-width="1" opacity="0.7"/>
+        <circle cx="300" cy="300" r="150" fill="none" stroke="url(#brass)" stroke-width="0.8" opacity="0.5"/>
+        <circle cx="300" cy="300" r="120" fill="none" stroke="url(#brass)" stroke-width="0.6" opacity="0.4"/>
+        <circle cx="300" cy="300" r="90" fill="none" stroke="url(#brass)" stroke-width="0.5" opacity="0.3"/>
+      </g>
+      <g class="ring-ticks">
+        <!-- generated via JS -->
+      </g>
+      <g class="ring-labels" font-family="JetBrains Mono" font-size="9" fill="#f26f21" opacity="0.85" letter-spacing="1">
+        <text x="300" y="38" text-anchor="middle">100 Cr 6 · HARDENED STEEL</text>
+        <text x="300" y="575" text-anchor="middle">Ø 210MM · HV 1100 · Ra &lt; 0.2µ</text>
+        <text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle">PLASMA COATED</text>
+        <text x="580" y="300" transform="rotate(90 580 300)" text-anchor="middle">CNC GROUND</text>
+      </g>
+      <g class="ring-dots">
+        <circle cx="300" cy="60" r="2.5" fill="#f26f21"/>
+        <circle cx="540" cy="300" r="2.5" fill="#f26f21"/>
+        <circle cx="300" cy="540" r="2.5" fill="#f26f21"/>
+        <circle cx="60" cy="300" r="2.5" fill="#f26f21"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero__scroll">
+    <span class="hero__scroll-label">Scroll</span>
+    <span class="hero__scroll-line"></span>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee__track">
+    <span>Since 1991</span><span class="dot-sep">●</span>
+    <span>Made for the Perfectionist</span><span class="dot-sep">●</span>
+    <span>Flange Type · Solid Screw · Press Fitting · Reversible · Multi Groove · Conical · Self-Lubricating · Reduced · Enlarged</span><span class="dot-sep">●</span>
+    <span>CNC Precision</span><span class="dot-sep">●</span>
+    <span>Since 1991</span><span class="dot-sep">●</span>
+    <span>Made for the Perfectionist</span><span class="dot-sep">●</span>
+    <span>Flange Type · Solid Screw · Press Fitting · Reversible · Multi Groove · Conical · Self-Lubricating · Reduced · Enlarged</span><span class="dot-sep">●</span>
+    <span>CNC Precision</span><span class="dot-sep">●</span>
+  </div>
+</div>
+
+<!-- LEGACY -->
+<section class="legacy" id="legacy">
+  <div class="legacy__inner">
+    <div class="section-label"><span>01</span><em>Legacy</em></div>
+
+    <div class="legacy__grid">
+      <div class="legacy__left">
+        <h2 class="heading-serif" data-reveal>
+          A workshop that <em>became</em> a standard.
+        </h2>
+        <p class="legacy__body" data-reveal>
+          Founded in 1991 as a family business, Vikram Engineering Works grew into a specialist for textile spinning rings manufacturing. What began as a pursuit of uncompromising quality is today a state-of-the-art facility, shaped by three generations of engineers who refuse to settle.
+        </p>
+        <p class="legacy__body" data-reveal>
+          Our rings are made of high-carbon, high-chrome 100 Cr 6 — core-hardened ball bearing steel — finished on precision CNC machinery by engineers with more than twenty-five years in ring manufacturing.
+        </p>
+
+        <div class="legacy__pullquote" data-reveal>
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1"><path d="M8 24c0-8 4-14 12-16M24 24c0-8 4-14 12-16"/></svg>
+          <p>We don't build rings. We build the conditions under which <em>perfection becomes repeatable</em>.</p>
+          <cite>— Vikram Engineering Works</cite>
+        </div>
+      </div>
+
+      <div class="legacy__right">
+        <ul class="timeline">
+          <li data-reveal>
+            <span class="tl__year">1991</span>
+            <div class="tl__body">
+              <h4>The workshop opens</h4>
+              <p>Three machines. One ambition: a ring the industry could trust.</p>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="dropdown">
-                  <a href="#home" class="dropdown-toggle animated fadeIn animation-delay-4"  data-name="home">Home
-                  </a>
-                </li>
-                
-                 <li class="dropdown">
-                  <a href="#features" class="dropdown-toggle animated fadeIn animation-delay-7" role="button" aria-haspopup="true" aria-expanded="false" data-name="blog">Features
-                  </a>
-                </li>
-
-                 <li class="dropdown">
-                  <a href="#aboutus" class="dropdown-toggle animated fadeIn animation-delay-7"  aria-haspopup="true" aria-expanded="false" data-name="blog"> About us
-                  </a>
-                </li>
-
-                 <li class="dropdown">
-                  <a href="#products" class="dropdown-toggle animated fadeIn animation-delay-7" aria-haspopup="true" aria-expanded="false" data-name="blog"> Products
-                  </a>
-                </li>
-
-                  <li class="dropdown">
-                  <a href="#achi" class="dropdown-toggle animated fadeIn animation-delay-7"   aria-haspopup="true" aria-expanded="false" data-name="blog"> Achievement
-                  </a>
-                </li>
-               
-                <li class="dropdown">
-                  <a href="#contact" class="dropdown-toggle animated fadeIn animation-delay-7"   aria-haspopup="true" aria-expanded="false" data-name="blog"> Contact
-                  </a>
-                </li>
-                
-                
-                <!-- <li class="btn-navbar-menu"><a href="javascript:void(0)" class="sb-toggle-left"><i class="zmdi zmdi-menu"></i></a></li> -->
-              </ul>
+          </li>
+          <li data-reveal>
+            <span class="tl__year">2001</span>
+            <div class="tl__body">
+              <h4>CNC precision</h4>
+              <p>Full transition to high-precision CNC machining; ovality tightens to 15µ.</p>
             </div>
-            <!-- navbar-collapse collapse -->
-            <a href="javascript:void(0)" class="sb-toggle-left btn-navbar-menu">
-              <i class="zmdi zmdi-menu"></i>
-            </a>
-          </div>
-          <!-- container -->
-        </nav>
-         <div class="ms-hero ms-hero-material" id="home">
-           <span class="ms-hero-bg"></span>
-           <div class="container">
-             <div class="col-lg-6 col-md-7">
-               <div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
-                 <!-- Wrapper for slides -->
-                 <div class="carousel-inner" role="listbox">
-                   <div class="item active">
-                     <div class="carousel-caption">
-                       <div class="ms-hero-material-text-container">
-                         <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
-                           <h1 class="animated fadeInLeft animation-delay-15 font-smoothing">
-                             <strong> All types of </strong> SPINNING, TWISTING & DOUBLING RINGS </h1>
-                           <h2 class="animated fadeInLeft animation-delay-18">MADE FOR
-                             <span class="color-warning">  PERFECTIONIST </span></h2>
-                         </header>
-                         <ul class="ms-hero-material-list">
-                           <li class="">
-                             <div class="ms-list-icon animated zoomInUp animation-delay-18">
-                               <span class="ms-icon ms-icon-circle ms-icon-xlg color-warning shadow-3dp">
-                                 <i class="zmdi zmdi-airplane"></i>
-                               </span>
-                             </div>
-                             <div class="ms-list-text animated fadeInRight animation-delay-19">Reliability </div>
-                           </li>
-                           <li class="">
-                             <div class="ms-list-icon animated zoomInUp animation-delay-20">
-                               <span class="ms-icon ms-icon-circle ms-icon-xlg color-success shadow-3dp">
-                                 <i class="zmdi zmdi-bike"></i>
-                               </span>
-                             </div>
-                             <div class="ms-list-text animated fadeInRight animation-delay-21">Quality</div>
-                           </li>
-                           <li class="">
-                             <div class="ms-list-icon animated zoomInUp animation-delay-22">
-                               <span class="ms-icon ms-icon-circle ms-icon-xlg color-danger shadow-3dp">
-                                 <i class="zmdi zmdi-album"></i>
-                               </span>
-                             </div>
-                             <div class="ms-list-text animated fadeInRight animation-delay-23">Performance </div>
-                           </li>
-                         </ul>
-                         <div class="ms-hero-material-buttons text-right">
-                           <div class="ms-hero-material-buttons text-right">
-                             <a href="aboutvikram.pdf" class="btn btn-success btn-raised animated fadeInRight animation-delay-24">
-                               <i class="zmdi zmdi-download"></i> Download </a>
-                           </div>
-                         </div>
-                       </div>
-                       <!-- ms-hero-material-text-container -->
-                     </div>
-                   </div>
-
-                 </div>
-               </div>
-             </div>
-             <div class="col-lg-6 col-md-5">
-               <div class="ms-hero-img animated zoomInUp animation-delay-30">
-                 <img src="assets/img/demo/mock-imac-material2.png" alt="" class="img-responsive" />
-                 <div id="carousel-hero-img" class="carousel carousel-fade slide" data-ride="carousel" data-interval="3000">
-                   <!-- Indicators -->
-                   <ol class="carousel-indicators carousel-indicators-hero-img">
-                     <li data-target="#carousel-hero-img" data-slide-to="0" class="active"></li>
-                     <li data-target="#carousel-hero-img" data-slide-to="1"></li>
-                     <li data-target="#carousel-hero-img" data-slide-to="2"></li>
-                   </ol>
-                   <!-- Wrapper for slides -->
-                   <div class="carousel-inner" role="listbox">
-                     <div class="ms-hero-img-slider item active">
-                       <img src="assets/img/demo/hero1.png" alt="" class="img-responsive" />  </div>
-                     <div class="ms-hero-img-slider item">
-                       <img src="assets/img/demo/hero3.png" alt="" class="img-responsive" />  </div>
-                     <div class="ms-hero-img-slider item">
-                       <img src="assets/img/demo/hero2.png" alt="" class="img-responsive" />  </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-           <!-- container -->
-         </div>
-         <!-- ms-hero ms-hero-black -->
-         <div class="container mt-4" id="features">
-           <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Know our amazing features </h2>
-           <div class="ms-feature col-lg-4 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
-             <div class="text-center card-block">
-               <span class="ms-icon ms-icon-circle ms-icon-xxlg color-info">
-                 <i class="zmdi zmdi-cloud-outline"></i>
-               </span>
-               <h4 class="color-info">Consistency,Quality & Reliabilty </h4>
-               <!-- <p class=""> Constitency quality and reliabilty </p> -->
-               <button type="button" class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal1"> For more </button>
-             </div>
-           </div>
-           <!-- modal -->
-            <div class="modal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-                <div class="modal-dialog modal-lg animated zoomIn animated-3x" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
-                            <h3 class="modal-title" id="myModalLabel2">Consistency, Quality,Reliability</h3>
-                        </div>
-                        <div class="modal-body">
-                          <p> Founded in 1991 as a family Business, Vikram Engineering Works  develop  in to a specialist for textile spinning rings manufacturing. We are having our own State-of-the-Art most sophisticated 
-                            & Advance manufacturing unit. 
-                            Made in high carbon&high chrome 100 Cr 6, Core hardened ball bearing steel. We have a highly 
-                            Ultra Modern infrastructure with high precession CNC machines, well Organized R&D and 
-                            Quality control system. Our rings ore having dry lubrication, anti-wear, on-metallic plasma like 
-                            coating . </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
+          </li>
+          <li data-reveal>
+            <span class="tl__year">2010</span>
+            <div class="tl__body">
+              <h4>Global reach</h4>
+              <p>Exports open to Asia, Africa, Europe and the Americas.</p>
             </div>
-           <!-- modal ends -->
-           <div class="ms-feature col-lg-4 col-md-6 col-sm-6 card wow flipInX animation-delay-8">
-             <div class="text-center card-block">
-               <span class="ms-icon ms-icon-circle ms-icon-xxlg color-warning">
-                 <i class="zmdi zmdi-desktop-mac"></i>
-               </span>
-               <h4 class="color-warning"> Techincal features </h4>
-               <!-- <p class="">Feature title </p> -->
-               <button type="button" class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal2"> For more </button>
-             </div>
-              <!-- modal -->
-              <div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-                  <div class="modal-dialog modal-lg animated zoomIn animated-3x" role="document">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
-                              <h3 class="modal-title" id="myModalLabel2">Feature</h3>
-                          </div>
-                          <div class="modal-body">
-                            <h3>Techincal Feature</h3>
-                            <ul>
-                              <li> Ovality of 15 to 20 microns.</li>
-                              <li> Ra value less than 0.2p + Ra. </li>
-                              <li> Vickers hardness 1100 Kg/mm </li>
-                              <li> Spindle Speed up to 21,000 rpm. </li>
-                              <li> Profile suitable for anymake of Ring Travellers. </li>
-                              <li> do not require 0 special running-in. </li>
-                            </ul>
-                            <h3>Special Feature</h3>
-                            <p>
-                              When, new ring installed we should remember that temperatures reach over 800° c ot the point of <br>
-                              contact between ring & Traveller. Due to high temperature micro-welds generated between ring and traveller. <br>
-                              Thanks to the special Coating on Vikram rings do not allow micro-welds to Occur on 
-                              the travellers and manage to keep their ring in the perfect condition for a much longer time. <br> 
-                              Consequently Ring Life extended much Longer including Compact Yarn. </p>
-                          </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-             <!-- modal ends -->
-           </div>
-        
-           <div class="ms-feature col-lg-4 col-md-6 col-sm-6 card wow flipInX animation-delay-6">
-             <div class="text-center card-block">
-               <span class="ms-icon ms-icon-circle ms-icon-xxlg  color-danger">
-                 <i class="zmdi zmdi-flower-alt"></i>
-               </span>
-               <h4 class="color-danger">quality assurance </h4>
-               <!-- <p class="">Feature title </p> -->
-               <button type="button" class="btn btn-primary btn-raised" data-toggle="modal" data-target="#myModal4"> For more </button>
-             </div>
-           </div>
-           <!-- modal -->
-            <div class="modal" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-                <div class="modal-dialog modal-lg animated zoomIn animated-3x" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
-                            <h3 class="modal-title" id="myModalLabel2">Constitency,Quality,Reliability</h3>
-                        </div>
-                        <div class="modal-body">
-                              <div class="owl-carousel owl-theme">
-             <div class="card animation-delay-6">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/quality/2.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card card-dark-inverse animation-delay-8">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/quality/3.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card animation-delay-6">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/quality/4.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card card-dark-inverse animation-delay-8">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/quality/5.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card animation-delay-10">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/quality/6.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card animation-delay-6">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/quality/7.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card card-dark-inverse animation-delay-8">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/quality/8.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card animation-delay-10">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/quality/9.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-               
-             </div>
-                  <div class="card animation-delay-6">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/quality/10.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-           </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
+          </li>
+          <li data-reveal>
+            <span class="tl__year">2018</span>
+            <div class="tl__body">
+              <h4>Plasma-coated series</h4>
+              <p>In-house non-metallic plasma coating; micro-welds eliminated, life extended.</p>
             </div>
-           <!-- modal ends -->
-         </div>
-          
-         <!-- container -->
-         <div class="wrap wrap-mountain mt-6">
-           <div class="container" id="aboutus">
-             <h2 class="text-center text-light mb-6 wow fadeInDown animation-delay-5">About
-               <strong> Vikram Enginnering </strong></h2>
-             <div class="row">
-               <div class="col-md-6 col-md-push-6 mb-4  center-block">
-                 <img src="assets/img/vikram/about.jpg" alt="" class="img-responsive center-block wow zoomIn animation-delay-12 " />  </div>
-               <div class="col-md-6 col-md-pull-6 pr-6">
-               <ul class="wow fadeInLeft animation-delay-6">
-                   <li> Established year in 1991.</li>
-                   <li>We are Manufacturer of Spinning Rings for the Spinning and Doubling Machines </li>
-
-                   <li> We are having wide range of high speed and low speed rings like: </li>
-                   <li> <strong> FLANGE TYPE HIGH SPEED RING </strong> </li>
-                   <li><strong>SOLID SCREW FITTING</strong></li>
-                   <li><strong>PRESS FITTING</strong></li>
-                   <li><strong>REVERSIBLE RING</strong></li>
-                   <li><strong>MULTI GROOVE RING</strong></li>
-                   <li><strong>CONICAL TYPE RING</strong></li>
-                   <li><strong>SELF LUBRICATING RING WITH ALUMINI UM ADOPTER</strong></li>
-                   <li><strong>REDUCED RING</strong></li>
-                   <li><strong>ENLARGE RING</strong></li>
-                   <li>We have a highly sophisticated infrastructure and high pricession
-                   CNC Machineries in-house to maintain international parameters of
-                   our rings.</li>
-                   <li>We have a well Oraganized, R & D unit for the development of the
-                  new products and improvisation in existing <ranges class=""></ranges></li>
-                   <li>We are having highly qualified quality conscious engineers with
-                  the experience of 25 years in ring manufacturing.</li>
-                  <li>STEEL we are using high strength, high chromium  & high carbon
-                  steel in our ring to achieve suitable hardness in conjunction with
-                  Ring Travelers.
-                 </li>
-
-               </ul>
-               </div>
-             </div>
-           </div>
-         </div>
-
-           <div class="container mt-6" id="products">
-           <h2 class="text-center color-primary mb-4"> Products</h2>
-           <div class="owl-dots"></div>
-           <div class="owl-carousel owl-theme">
-             <div class="card animation-delay-6">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/vikram/2.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card card-dark-inverse animation-delay-8">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/vikram/3.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card animation-delay-6">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/vikram/4.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card card-dark-inverse animation-delay-8">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/vikram/5.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card animation-delay-10">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/vikram/6.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card animation-delay-6">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/vikram/7.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card card-dark-inverse animation-delay-8">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/vikram/8.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card animation-delay-10">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/vikram/9.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-               
-             </div>
-                  <div class="card animation-delay-6">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/vikram/10.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card card-dark-inverse animation-delay-8">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/vikram/11.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>
-             </div>
-             <div class="card animation-delay-10">
-               <div class="withripple zoom-img">
-                 <a href="javascript:void()">
-                   <img src="assets/img/vikram/12.jpg" alt="..." class="img-responsive" />
-                 </a>
-               </div>  
-             </div>
-           </div>
-         </div>
-    
-
-         <div class="container mt-6" id="achi">
-            <!-- <div class="row"> -->
-           <h2 class="text-center color-primary mb-4"> Achievements</h2>
-           <img src="assets/img/vikram/ach.jpg" class="img-responsive">
-          <!-- </div> -->
-          </div>
-         <br>
-         
-         <div class="container mt-6" id="achi">
-            <div class="row">
-           <h2 class="text-center color-primary mb-4"> Our export</h2>
-           <img src="assets/img/map.jpg" alt="map.jpg" class="img-responsive">
-          </div> <br>
-          </div>
-          
-         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14721.084695500876!2d71.668061!3d22.7181601!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e582a979d7c2e25!2sVIKRAM+ENGINEERING+WORKS!5e0!3m2!1sen!2sin!4v1502290494514" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-          
-          <aside class="ms-footbar" id="contact">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 ms-footer-col">
-                <div class="ms-footbar-block">
-                  <h3 class="ms-footbar-title">Sitemap</h3>
-                  <ul class="list-unstyled ms-icon-list three_cols">
-                    <li>
-                      <a href="#home">
-                        <i class="zmdi zmdi-home"></i> Home</a>
-                    </li>
-                    <li>
-                      <a href="#aboutus">
-                        <i class="zmdi zmdi-image-o"></i> About us</a>
-                    </li>
-                    <li>
-                      <a href="#products">
-                        <i class="zmdi zmdi-case"></i> Products</a>
-                    </li>
-               
-              
-                    <li>
-                      <a href="#achi">
-                        <i class="zmdi zmdi-face"></i> Achivements</a>
-                    </li>
-                    <li>
-                      <a href="#contact">
-                        <i class="zmdi zmdi-email"></i> Contact</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="ms-footbar-block">
-                  <h3 class="ms-footbar-title">Subscribe</h3>
-                  <p class="">Subscribe us for the latest  news</p>
-                  <form>
-                    <div class="form-group label-floating mt-2 mb-1">
-                      <div class="input-group ms-input-subscribe">
-                        <label class="control-label" for="ms-subscribe">
-                          <i class="zmdi zmdi-email"></i> Email Adress</label>
-                        <input type="email" id="ms-subscribe" class="form-control"> </div>
-                    </div>
-                    <button class="ms-subscribre-btn" type="button">Subscribe</button>
-                  </form>
-                </div>
-              </div>
-              
-              <div class="col-md-8 col-sm-5 ms-footer-col ms-footer-text-right">
-                <div class="ms-footbar-block">
-                  <div class="ms-footbar-title">
-                    <!-- <span class="ms-logo ms-logo-white ms-logo-sm mr-1">V</span>
-                    <h3 class="no-m ms-site-title">
-                      <span>Style</span>
-                    </h3> -->
-                  </div>
-                  <address class="no-mb">
-                    <p>
-                      <i class="color-danger-light zmdi zmdi-pin mr-1"></i> 219 G.I.D.C industrial estate </p>
-                    <p>
-                      <i class="color-warning-light zmdi zmdi-map mr-1"></i> Wadhwan city, 363035</p>
-                    <p>
-                      <i class="color-info-light zmdi zmdi-email mr-1"></i>
-                      <a href="mailto:joe@example.com">vikram_ring@rediffmail.com</a>
-                    </p>
-                    <p>
-                      <i class="color-royal-light zmdi zmdi-phone mr-1"></i>+91 2752-325729</p>
-                    <p>
-                    <p>
-                      <i class="color-royal-light zmdi zmdi-phone mr-1"></i>+91 9825223674</p>
-                    <p>
-                      <i class="color-success-light fa fa-fax mr-1"></i>+91 242849-243674 </p>
-                  </address>
-                </div>
-                <div class="ms-footbar-block">
-                  <h3 class="ms-footbar-title">Social Media</h3>
-                  <div class="ms-footbar-social">
-                    <a href="javascript:void(0)" class="btn-circle btn-facebook">
-                      <i class="zmdi zmdi-facebook"></i>
-                    </a>
-                    <a href="javascript:void(0)" class="btn-circle btn-twitter">
-                      <i class="zmdi zmdi-twitter"></i>
-                    </a>
-                    <a href="javascript:void(0)" class="btn-circle btn-youtube">
-                      <i class="zmdi zmdi-youtube"></i>
-                    </a>
-                    <br>
-                    <a href="javascript:void(0)" class="btn-circle btn-google">
-                      <i class="zmdi zmdi-google"></i>
-                    </a>
-                    <a href="javascript:void(0)" class="btn-circle btn-instagram">
-                      <i class="zmdi zmdi-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
+          </li>
+          <li data-reveal>
+            <span class="tl__year">Today</span>
+            <div class="tl__body">
+              <h4>A reference standard</h4>
+              <p>Ten product families · twenty-plus export nations · zero tolerance for drift.</p>
             </div>
-          </div>
-        </aside>
-         <footer class="ms-footer">
-           <p>Powered by <a href="http://akshil.in"> Akshil shah</a></p>
-            <p>Copyright &copy;Vikram engineerings </p>
-         </footer>
-         <div class="btn-back-top">
-           <a href="#" data-scroll="" id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised ">
-             <i class="zmdi zmdi-long-arrow-up"></i>
-           </a>
-         </div>
-       </div>
-       <!-- sb-site-container -->
-       <div class="ms-slidebar sb-slidebar sb-left sb-momentum-scrolling sb-style-overlay">
-        <header class="ms-slidebar-header">
-        </header>
-        <ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
-          <li>
-            <a data-scroll class="link" href="#home">
-              <i class="zmdi zmdi-home"></i> Home</a>
           </li>
-          <li>
-            <a data-scroll class="link" href="#features">
-              <i class="zmdi"></i> Features</a>
-          </li>
-          <li>
-            <a data-scroll class="link" href="#aboutus">
-              <i class="zmdi"></i> About us</a>
-          </li>
-          <li>
-            <a data-scroll class="link" href="#products">
-              <i class="zmdi"></i> Products </a>
-          </li>
-          <li>
-            <a data-scroll class="link" href="#achi">
-              <i class="zmdi"></i> Achivements</a>
-          </li>
-          <li>
-            <a data-scroll class="link" href="#contactus">
-              <i class="zmdi"></i> Contact us</a>
-          </li>
-
         </ul>
-      </div>  
-       <script src="assets/js/plugins.min.js"></script>
-       <script src="assets/js/app.min.js"></script>
-       <script src="assets/js/configurator.min.js"></script>
-       <script src="assets/js/index.js"></script>
-     </body>
-   </html>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRECISION -->
+<section class="precision" id="precision">
+  <div class="precision__header">
+    <div class="section-label section-label--light"><span>02</span><em>Precision</em></div>
+    <h2 class="heading-serif precision__title" data-reveal>
+      Tolerances measured<br/> in microns, not <em>millimetres.</em>
+    </h2>
+  </div>
+
+  <div class="spec-grid">
+    <article class="spec-card spec-card--hero" data-reveal>
+      <div class="spec-card__kicker">Signature Feature</div>
+      <h3>Plasma-coated running surface</h3>
+      <p>At the point of contact between ring and traveller, temperatures exceed 800°C. Conventional rings form micro-welds; ours don't. A non-metallic plasma-like coating — dry-lubricated and anti-wear — keeps travellers clean and rings in perfect condition, dramatically longer.</p>
+      <div class="spec-card__figure">
+        <svg viewBox="0 0 320 220">
+          <defs>
+            <linearGradient id="heatG" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#f26f21"/>
+              <stop offset="50%" stop-color="#d93a2a"/>
+              <stop offset="100%" stop-color="#8a1f10"/>
+            </linearGradient>
+          </defs>
+          <g transform="translate(160 110)">
+            <circle r="88" fill="none" stroke="#f26f21" stroke-width="0.5" opacity="0.3"/>
+            <circle r="70" fill="none" stroke="url(#heatG)" stroke-width="14"/>
+            <circle r="54" fill="none" stroke="#f26f21" stroke-width="0.5" opacity="0.3"/>
+            <circle r="4" fill="#f26f21"/>
+          </g>
+          <g font-family="JetBrains Mono" font-size="9" fill="#8a8886">
+            <line x1="160" y1="20" x2="160" y2="32" stroke="#8a8886" stroke-width="0.5"/>
+            <text x="160" y="14" text-anchor="middle">800°C CONTACT ZONE</text>
+            <line x1="40" y1="110" x2="85" y2="110" stroke="#8a8886" stroke-width="0.5"/>
+            <text x="36" y="113" text-anchor="end">PLASMA COAT</text>
+            <line x1="280" y1="110" x2="235" y2="110" stroke="#8a8886" stroke-width="0.5"/>
+            <text x="284" y="113" text-anchor="start">100 Cr 6</text>
+          </g>
+        </svg>
+      </div>
+    </article>
+
+    <article class="spec-card" data-reveal>
+      <div class="spec-card__num">A/</div>
+      <h3>Ovality 15–20µ</h3>
+      <p>Core-hardened steel, ground to geometry tighter than the human eye can perceive.</p>
+      <ul class="spec-list">
+        <li><span>Ovality</span><em>15–20 µm</em></li>
+        <li><span>Ra value</span><em>&lt; 0.2 µ + Ra</em></li>
+      </ul>
+    </article>
+
+    <article class="spec-card" data-reveal>
+      <div class="spec-card__num">B/</div>
+      <h3>Hardness HV 1100</h3>
+      <p>Vickers hardness calibrated for the exact working conjunction with ring travellers.</p>
+      <ul class="spec-list">
+        <li><span>Vickers</span><em>1100 kg/mm²</em></li>
+        <li><span>Steel</span><em>100 Cr 6</em></li>
+      </ul>
+    </article>
+
+    <article class="spec-card" data-reveal>
+      <div class="spec-card__num">C/</div>
+      <h3>Speed 21,000 rpm</h3>
+      <p>Spindle-speed envelope extended without compromise to yarn consistency or ring life.</p>
+      <ul class="spec-list">
+        <li><span>Spindle</span><em>≤ 21,000 rpm</em></li>
+        <li><span>Profile</span><em>Universal traveller</em></li>
+      </ul>
+    </article>
+
+    <article class="spec-card spec-card--wide" data-reveal>
+      <div class="spec-card__num">D/</div>
+      <h3>No running-in required</h3>
+      <p>Vikram rings ship ready to spin. The coating and geometry are finished to running tolerance on the shop floor — there is no break-in phase, no yield loss, no guesswork at installation.</p>
+      <div class="pill-row">
+        <span class="pill">Dry-lubricated</span>
+        <span class="pill">Anti-wear</span>
+        <span class="pill">Non-metallic coat</span>
+        <span class="pill">Universal profile</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- CATALOGUE -->
+<section class="catalogue" id="catalogue">
+  <div class="catalogue__header">
+    <div class="section-label"><span>03</span><em>Catalogue</em></div>
+    <div class="catalogue__title-row">
+      <h2 class="heading-serif" data-reveal>Ten families.<br/>One standard.</h2>
+      <p class="catalogue__lede" data-reveal>A full line of high-speed and low-speed rings for every spinning and doubling requirement — each family ground, polished and coated to the same uncompromising tolerance.</p>
+    </div>
+  </div>
+
+  <div class="product-grid">
+    <article class="product" data-reveal>
+      <div class="product__num">01</div>
+      <div class="product__img"><img src="assets/img/products/lr-ring.jpg" alt="Ring for L.R R\F" loading="lazy"/></div>
+      <h4>Ring for L.R R\F</h4>
+      <p>Precision-ground ring for LMW Rieter spinning frames.</p>
+    </article>
+    <article class="product" data-reveal>
+      <div class="product__num">02</div>
+      <div class="product__img"><img src="assets/img/products/textool.jpg" alt="Ring for Textool R\F" loading="lazy"/></div>
+      <h4>Ring for Textool R\F</h4>
+      <p>Engineered for Textool ring frames — signature Vikram 15 tolerance.</p>
+    </article>
+    <article class="product" data-reveal>
+      <div class="product__num">03</div>
+      <div class="product__img"><img src="assets/img/products/zinser.jpg" alt="Ring for Zinser Worsted R\F" loading="lazy"/></div>
+      <h4>Ring for Zinser Worsted R\F</h4>
+      <p>High-speed profile tailored to Zinser worsted ring frames.</p>
+    </article>
+    <article class="product" data-reveal>
+      <div class="product__num">04</div>
+      <div class="product__img"><img src="assets/img/products/vikram-15-stack.jpg" alt="Ring for Heavy Doublers" loading="lazy"/></div>
+      <h4>Ring for Heavy Doublers</h4>
+      <p>Robust ring geometry for heavy-yarn doubling applications.</p>
+    </article>
+    <article class="product" data-reveal>
+      <div class="product__num">05</div>
+      <div class="product__img"><img src="assets/img/products/reversible.jpg" alt="Reversible Ring" loading="lazy"/></div>
+      <h4>Reversible Ring</h4>
+      <p>Double-flange symmetry — service life, doubled.</p>
+    </article>
+    <article class="product" data-reveal>
+      <div class="product__num">06</div>
+      <div class="product__img"><img src="assets/img/products/multi-groove.jpg" alt="Multi Groove Ring" loading="lazy"/></div>
+      <h4>Multi Groove Ring</h4>
+      <p>Engineered grooves for compact-yarn applications.</p>
+    </article>
+    <article class="product" data-reveal>
+      <div class="product__num">07</div>
+      <div class="product__img"><img src="assets/img/products/ring-with-adopter.jpg" alt="Self-Lubricating with Aluminium Adopter" loading="lazy"/></div>
+      <h4>Self-Lubricating · Al Adopter</h4>
+      <p>Aluminium-adoptered ring with dry lubrication reservoir.</p>
+    </article>
+    <article class="product" data-reveal>
+      <div class="product__num">08</div>
+      <div class="product__img"><img src="assets/img/products/saco-lowel.jpg" alt="Ring for Saco-Lowell M\C" loading="lazy"/></div>
+      <h4>Ring for Saco-Lowell M\C</h4>
+      <p>Assembled ring-and-bracket set for Saco-Lowell machinery.</p>
+    </article>
+    <article class="product" data-reveal>
+      <div class="product__num">09</div>
+      <div class="product__img"><img src="assets/img/products/flange-double.jpg" alt="Flange Type High Speed Ring" loading="lazy"/></div>
+      <h4>Flange Type · High Speed</h4>
+      <p>The flagship high-RPM ring. Universal traveller profile.</p>
+    </article>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="process__inner">
+    <div class="section-label section-label--light"><span>·</span><em>Workshop</em></div>
+    <h2 class="heading-serif" data-reveal>Four movements,<br/> from bar-stock to <em>bearing</em>.</h2>
+
+    <ol class="process-list">
+      <li data-reveal>
+        <div class="process-list__no">I.</div>
+        <div class="process-list__body">
+          <h4>Forge</h4>
+          <p>High-chromium, high-carbon 100 Cr 6 bar stock enters the line. Each batch is qualified against certificate.</p>
+        </div>
+        <div class="process-list__meta">100 Cr 6</div>
+      </li>
+      <li data-reveal>
+        <div class="process-list__no">II.</div>
+        <div class="process-list__body">
+          <h4>Machine</h4>
+          <p>Multi-axis CNC grinding produces base geometry to the micron. QC samples every nth ring in real-time.</p>
+        </div>
+        <div class="process-list__meta">CNC · 5-AXIS</div>
+      </li>
+      <li data-reveal>
+        <div class="process-list__no">III.</div>
+        <div class="process-list__body">
+          <h4>Harden</h4>
+          <p>Core hardening to Vickers 1100 kg/mm². Uniformity controlled across the ring cross-section.</p>
+        </div>
+        <div class="process-list__meta">HV 1100</div>
+      </li>
+      <li data-reveal>
+        <div class="process-list__no">IV.</div>
+        <div class="process-list__body">
+          <h4>Coat</h4>
+          <p>Non-metallic plasma coating laid over the running surface. Polished to Ra &lt; 0.2µ. Certified and shipped.</p>
+        </div>
+        <div class="process-list__meta">Ra &lt; 0.2µ</div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- REACH -->
+<section class="reach" id="reach">
+  <div class="section-label"><span>04</span><em>Reach</em></div>
+  <div class="reach__header">
+    <h2 class="heading-serif" data-reveal>Spun in Wadhwan.<br/><em>Trusted</em> in six countries.</h2>
+    <p class="reach__lede" data-reveal>From Milan to Hanoi — our rings run on spinning floors across Europe, the Middle East, Africa and South-East Asia. What links them isn't volume, it's the same obsession with tolerance, batch after batch.</p>
+  </div>
+
+  <div class="reach__map" data-reveal>
+    <div class="worldmap-wrap">
+      <img src="assets/img/worldmap.png" alt="Export markets worldwide" class="worldmap-img" />
+      <!-- Pin overlays positioned in % of the image -->
+      <div class="pin pin--hq pin--below" style="left:69%; top:46%;">
+        <span class="pin__dot"></span>
+        <span class="pin__label">India · HQ</span>
+      </div>
+      <div class="pin pin--above" style="left:49%; top:34%;"><span class="pin__dot"></span><span class="pin__label">Italy</span></div>
+      <div class="pin pin--above" style="left:55%; top:35%;"><span class="pin__dot"></span><span class="pin__label">Turkey</span></div>
+      <div class="pin" style="left:55%; top:44%;"><span class="pin__dot"></span><span class="pin__label pin__label--left">Egypt</span></div>
+      <div class="pin" style="left:74%; top:45%;"><span class="pin__dot"></span><span class="pin__label">Bangladesh</span></div>
+      <div class="pin pin--below" style="left:81%; top:50%;"><span class="pin__dot"></span><span class="pin__label">Vietnam</span></div>
+    </div>
+    <div class="reach__legend">
+      <div><span class="dot dot--hq"></span> Headquarters — Wadhwan, IN</div>
+      <div><span class="dot dot--active"></span> Active export markets</div>
+    </div>
+  </div>
+
+  <div class="reach__countries">
+    <div class="country-col">
+      <h5>South Asia</h5>
+      <ul><li>India <em>— HQ</em></li><li>Bangladesh</li></ul>
+    </div>
+    <div class="country-col">
+      <h5>Europe</h5>
+      <ul><li>Italy</li></ul>
+    </div>
+    <div class="country-col">
+      <h5>Middle East &amp; Africa</h5>
+      <ul><li>Turkey</li><li>Egypt</li></ul>
+    </div>
+    <div class="country-col">
+      <h5>South East Asia</h5>
+      <ul><li>Vietnam</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONY -->
+<section class="testimony">
+  <blockquote data-reveal>
+    <p>
+      <span class="quote-open">"</span>
+      Batch after batch, the geometry holds. There is no drift, no running-in, no guesswork. Vikram rings are the <em>quiet part</em> of a good spinning floor.
+      <span class="quote-close">"</span>
+    </p>
+    <footer>
+      <cite>— Mill Operations Lead</cite>
+      <span class="sep">·</span>
+      <span>Surat, IN</span>
+    </footer>
+  </blockquote>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact__grid">
+    <div class="contact__left">
+      <div class="section-label section-label--light"><span>06</span><em>Contact</em></div>
+      <h2 class="heading-serif" data-reveal>Begin a<br/> conversation.</h2>
+      <p class="contact__lede" data-reveal>
+        For specifications, samples or trade enquiries, reach us directly. Mill engineers speak to mill engineers.
+      </p>
+
+      <ul class="contact__list">
+        <li data-reveal>
+          <span class="contact__lbl">Workshop</span>
+          <span class="contact__val">219, G.I.D.C Industrial Estate, Phase-II,<br/>Wadhwan City — 363 035, Gujarat, IN</span>
+        </li>
+        <li data-reveal>
+          <span class="contact__lbl">Mobile</span>
+          <span class="contact__val">
+            <a href="tel:+919033255845">+91 90332 · 55845</a><br/>
+            <a href="tel:+919825223674">+91 98252 · 23674</a>
+          </span>
+        </li>
+        <li data-reveal>
+          <span class="contact__lbl">Electronic Mail</span>
+          <span class="contact__val"><a href="mailto:vikram_ring@rediffmail.com">vikram_ring@rediffmail.com</a></span>
+        </li>
+        <li data-reveal>
+          <span class="contact__lbl">Website</span>
+          <span class="contact__val"><a href="https://www.vikramtextilering.com">www.vikramtextilering.com</a></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contact__right">
+      <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.contact-form__sent').classList.add('is-on');">
+        <div class="contact-form__row">
+          <label>
+            <span>Your name</span>
+            <input type="text" required />
+          </label>
+          <label>
+            <span>Company</span>
+            <input type="text" />
+          </label>
+        </div>
+        <label>
+          <span>E-mail</span>
+          <input type="email" required />
+        </label>
+        <label>
+          <span>Enquiry</span>
+          <select>
+            <option>Request a product sample</option>
+            <option>Technical specification</option>
+            <option>Trade · distributorship</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea rows="4"></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary btn--full">
+          <span>Send enquiry</span>
+          <svg viewBox="0 0 20 20" width="14" height="14"><path d="M3 10h14M11 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+        <div class="contact-form__sent">Thank you — we'll be in touch within 48 hours.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__huge">
+    <span data-split-word>VIKRAM</span>
+    <span data-split-word>ENGINEERING</span>
+  </div>
+  <div class="footer__row">
+    <div>
+      <img src="assets/img/logo.png" alt="Vikram Engineering Works" class="footer__logo" />
+      <p>Engineering Works · Since 1991<br/>Wadhwan, Gujarat · India</p>
+    </div>
+    <div class="footer__nav">
+      <a href="#legacy">Legacy</a>
+      <a href="#precision">Precision</a>
+      <a href="#catalogue">Catalogue</a>
+      <a href="#reach">Reach</a>
+      <a href="clients.html">Clients</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer__meta">
+      <p>© <span id="year"></span> Vikram Engineering Works</p>
+      <p>All rings spun to tolerance.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/index.js"></script>
+</body>
+</html>
